@@ -20,3 +20,20 @@
 .App-link {
   color: #09d3ac;
 }
+
+.book-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.book-list-item {
+  width: 30%;
+  list-style: none;
+}
+
+.thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
