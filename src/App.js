@@ -28,13 +28,6 @@ class App extends Component {
     users: [],
     bookNextAvailability: ""
   };
-  // componentDidMount() {
-  //   debugger;
-  //   const { history, location } = this.props;
-  //   if (location.pathname === "/") {
-  //     history.push(routes.books);
-  //   }
-  // }
 
   componentDidMount() {
     debugger;
