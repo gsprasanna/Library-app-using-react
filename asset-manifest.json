@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Library-app-using-react/static/css/main.5ea0f979.chunk.css",
-    "main.js": "/Library-app-using-react/static/js/main.1df1775b.chunk.js",
-    "main.js.map": "/Library-app-using-react/static/js/main.1df1775b.chunk.js.map",
+    "main.js": "/Library-app-using-react/static/js/main.9d860f84.chunk.js",
+    "main.js.map": "/Library-app-using-react/static/js/main.9d860f84.chunk.js.map",
     "runtime-main.js": "/Library-app-using-react/static/js/runtime-main.6e92c49c.js",
     "runtime-main.js.map": "/Library-app-using-react/static/js/runtime-main.6e92c49c.js.map",
     "static/css/2.0624914a.chunk.css": "/Library-app-using-react/static/css/2.0624914a.chunk.css",
     "static/js/2.2059fabe.chunk.js": "/Library-app-using-react/static/js/2.2059fabe.chunk.js",
     "static/js/2.2059fabe.chunk.js.map": "/Library-app-using-react/static/js/2.2059fabe.chunk.js.map",
     "index.html": "/Library-app-using-react/index.html",
-    "precache-manifest.a5b5794f39885c5ffb9f8c932ff03069.js": "/Library-app-using-react/precache-manifest.a5b5794f39885c5ffb9f8c932ff03069.js",
+    "precache-manifest.295c4d350fa43c55968fb5bebd71efc8.js": "/Library-app-using-react/precache-manifest.295c4d350fa43c55968fb5bebd71efc8.js",
     "service-worker.js": "/Library-app-using-react/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/Library-app-using-react/static/css/2.0624914a.chunk.css.map",
     "static/css/main.5ea0f979.chunk.css.map": "/Library-app-using-react/static/css/main.5ea0f979.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.0624914a.chunk.css",
     "static/js/2.2059fabe.chunk.js",
     "static/css/main.5ea0f979.chunk.css",
-    "static/js/main.1df1775b.chunk.js"
+    "static/js/main.9d860f84.chunk.js"
   ]
 }
