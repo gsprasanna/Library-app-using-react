@@ -15,7 +15,7 @@ const fetchData = route => {
   });
 };
 
-export const sendData = (route, method, body) => {
+export const updateBooks = (route, method, body) => {
   const requestUrl = PRIMARY_SERVER + route;
 
   const headers = new Headers({

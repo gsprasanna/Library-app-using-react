@@ -1,6 +1,7 @@
 const routes = {
   books: "/book",
-  cart: "/cart"
+  cart: "/cart",
+  login: "/login"
 };
 
 export default routes;
