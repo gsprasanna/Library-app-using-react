@@ -1,6 +1,19 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+import AddIcon from "@material-ui/icons/Add";
+import RemoveRoundedIcon from "@material-ui/icons/RemoveRounded";
+import Badge from "react-bootstrap/Badge";
+
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button
+} from "reactstrap";
 
 const BookList = ({
   id,
@@ -11,26 +24,63 @@ const BookList = ({
   availability,
   image,
   book,
-  handleClick
+  handleAddToCart,
+  handleRemoveFromCart,
+  cart,
+  availableDate
 }) => {
   debugger;
   return (
-    <li className="book-list-item" id={id}>
-      <img className="thumbnail" src={image} alt={"loading"} />
-      <h4>{title}</h4>
-      <p>author by : {author}</p>
-      <p>year : {year}</p>
-      <p>availability : {availability}</p>
-      <p>
-        In Stock : <strong>{totalBooks}</strong>
-      </p>
+    <Card id={id} disabled={availability == "no"}>
+      <CardImg src={image} alt={"loading"} />
+      <CardBody>
+        <h3>{title}</h3>
+        <CardSubtitle>Author : {author}</CardSubtitle>
+        <CardSubtitle>Year : {year}</CardSubtitle>
+        <CardText>
+          <strong>
+            {availability == "yes" ? (
+              <Badge pill variant="success" className="badge-size">
+                {`Available`}
+              </Badge>
+            ) : (
+              <Badge pill variant="danger">
+                Unavailable
+              </Badge>
+            )}
+            {availability == "no" ? (
+              <Badge pill variant="danger" className="badge-size">
+                {`Available on : ${availableDate}`}
+              </Badge>
+            ) : (
+              ""
+            )}
+          </strong>
+        </CardText>
+        {/* <CardText>
+          In Stock : <strong>{totalBooks}</strong>
+        </CardText> */}
 
-      <button onClick={handleClick}>
-        <FontAwesomeIcon icon={faPlus} size="5x">
-          Add to bag
-        </FontAwesomeIcon>
-      </button>
-    </li>
+        {cart.find(x => x.id === id) ? (
+          <button
+            className="btn btn-danger"
+            onClick={handleRemoveFromCart.bind(this, book)}
+          >
+            <RemoveRoundedIcon />
+            Remove from cart
+          </button>
+        ) : (
+          <button
+            disabled={availability == "no"}
+            className="btn btn-primary"
+            onClick={handleAddToCart.bind(this, book)}
+          >
+            <AddIcon />
+            Add to cart
+          </button>
+        )}
+      </CardBody>
+    </Card>
   );
 };
 
